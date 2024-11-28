@@ -1,0 +1,73 @@
+/* Body */
+body {
+    background-image: url('../res/2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Style pour le conteneur principal */
+.login-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Style pour les étiquettes et les champs de formulaire */
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"],
+.login-form input[type="date"],
+.login-form textarea,
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style pour les boutons */
+.button-container {
+    text-align: center;
+}
+
+.button-container input[type="button"],
+.button-container input[type="reset"],
+.button-container input[type="file"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-container input[type="button"]:hover,
+.button-container input[type="reset"]:hover 
+.button-container input[type="file"]:hover{
+    background-color: #0056b3;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction avec Logo et Barre de Téléchargement</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .intro-container {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro-container img {
+            width: auto; /* Ajustez la taille du logo selon vos besoins */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .progress-container {
+            width: 50%; /* Ajustez la largeur de la barre de progression */
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(to right, white, orange 50%, darkorange);
+            transition: width 1s ease; /* Transition douce de la largeur */
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <img src="../res/1.png" alt="Logo de votre site">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var progressBar = document.getElementById("progress-bar");
+            var width = 1;
+            var interval = setInterval(increaseWidth, 50); // Augmente la largeur toutes les 50 millisecondes
+
+            function increaseWidth() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    // Redirection vers la page d'accueil après le téléchargement
+                    setTimeout(function() {
+                        window.location.href = "../HTML/site.html"; // Remplacez "page_accueil.html" par le chemin de votre page d'accueil
+                    }, 1000); // Délai en millisecondes avant la redirection (1 seconde dans cet exemple)
+                } else {
+                    width++;
+                    progressBar.style.width = width + "%";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

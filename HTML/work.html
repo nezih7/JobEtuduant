@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../res/22 (1).png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier une demande d'étudiant</title>
+    <link rel="stylesheet" href="../CSS/work.css">
+</head>
+<body>
+    <div class="conteneur">
+    <div class="login-form" id="login-form">
+    <h1>Offre d'emploi</h1>
+    <form name="studentRequestForm" method="post" action="../PHP/work.php">
+        <label for="companyName">Nom de l'entreprise :</label>
+        <input type="text" id="companyName" name="companyName" required><br><br>
+
+        <label for="companyType">Type de l'entreprise :</label>
+        <input type="text" id="companyType" name="companyType" required><br><br>
+
+        <label for="jobTitle">Titre du poste :</label>
+        <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+        <label for="jobDescription">Description du poste :</label><br>
+        <textarea id="jobDescription" name="jobDescription" rows="4" cols="50" placeholder="n'est pas obligatoire"></textarea><br><br>
+
+        <label for="salary">Salaire proposé :</label>
+        <input type="text" id="salary" name="salary"><br><br>
+
+        <label for="cin">CIN :</label>
+        <input type="text" id="cin" name="cin"><br><br>
+
+        <label for="lieu">Lieu :</label>
+        <select id="lieu" name="lieu" required>
+            <option value="">Sélectionnez une région</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Béja">Béja</option>
+            <option value="Ben Arous">Ben Arous</option>
+            <option value="Bizerte">Bizerte</option>
+            <option value="Gabès">Gabès</option>
+            <option value="Gafsa">Gafsa</option>
+            <option value="Jendouba">Jendouba</option>
+            <option value="Kairouan">Kairouan</option>
+            <option value="Kasserine">Kasserine</option>
+            <option value="Kébili">Kébili</option>
+            <option value="Le Kef">Le Kef</option>
+            <option value="Mahdia">Mahdia</option>
+            <option value="La Manouba">La Manouba</option>
+            <option value="Médenine">Médenine</option>
+            <option value="Monastir">Monastir</option>
+            <option value="Nabeul">Nabeul</option>
+            <option value="Sfax">Sfax</option>
+            <option value="Sidi Bouzid">Sidi Bouzid</option>
+            <option value="Siliana">Siliana</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Tataouine">Tataouine</option>
+            <option value="Tozeur">Tozeur</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Zaghouan">Zaghouan</option>
+        </select>
+        <br><br>
+        <label for="contactEmail">Adresse e-mail de contact :</label>
+        <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+        <div class="button-container">
+        <input type="submit" value="Publier la demande">
+    </div>
+    </form>
+    </div></div>
+</body>
+</html>
+

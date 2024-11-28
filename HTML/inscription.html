@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription - JobÉtudiant</title>
+    <link rel="icon" type="image/x-icon" href="../res/22 (1).png">
+    <link rel="stylesheet" href="../CSS/inscription.css">
+    
+    <script>
+        function redirectToCreationPage() {
+            var accountType = document.querySelector('input[name="account_type"]:checked');
+            if (accountType) {
+                accountType = accountType.value;
+                if (accountType === "student") {
+                    window.location.href = "inscetu.html"; // Redirige vers la page d'inscription pour les étudiants
+                } else if (accountType === "employer") {
+                    window.location.href = "incent.html"; // Redirige vers la page d'inscription pour les employeurs
+                }
+            } else {
+                alert("Veuillez sélectionner un type de compte."); // Affiche une alerte si aucun type de compte n'est sélectionné
+            }
+        }
+    </script>
+    <style>
+       
+        </style>
+</head>
+<body>
+
+
+    <!-- Formulaire d'inscription -->
+<div id="conteneur">
+    <div class="login-form" id="register-form">
+        <h1>Inscription</h1>
+        <form action="" method="post" name="f">
+        <div id="a"><p><label>Veuillez sélectionner le type de compte:</label>
+        <!-- Ajout de radio boutons --><br>
+        <input type="radio" id="student" name="account_type" value="student">
+        <label for="student">Étudiant</label><br>
+        <input type="radio" id="employer" name="account_type" value="employer">
+        <label for="employer">Employeur</label><br></div>
+        <!-- Appel de la fonction redirectToCreationPage() lors du clic sur le bouton -->
+        <div class="button-container"><input type="button" value="Créer un compte" onclick="redirectToCreationPage()"><input type="reset"></div>
+    </form>
+    </div>
+</div>

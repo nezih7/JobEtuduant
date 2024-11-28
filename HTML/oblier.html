@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../res/22 (1).png">
+    <link rel="stylesheet" href="../CSS/connexion.css">
+    <script src="../JS/oublier.js"></script>
+
+    <title>Update </title>
+</head>
+<body onload="capt()">
+    <div class="conteneur">
+        <div class="login-form" id="login-form">
+            <h1>MODIFIER MOT_DE_PASSE</h1>
+            <form action="../PHP/oublier.php" method="post" name="f">
+                <label for="ci">Nº Carte d'identité nationale:</label><br>
+                <input type="text" id="cin" name="cin"><br>
+                <label>Email:</label><input type="Email" name="em"><br><br>
+                <label>Nouveau Mot de passe:</label><input type="password" name="ps"><br><br>
+                <label>Confirmer votre nouvelle Mot De Passe:</label><input type="password" name="cps"><br><br>
+                <label>Captcha:</label><input type="text" name="cap" disabled><br>
+                <label>Combien de caractère majuscule dans le captcha ?:</label><input type="text" name="ccap" id="ccap" size="2">
+                <div class="button-container">
+                    <input type="button" value="Modifier" onclick="verif()">
+                    <input type="button" value="Clear" onclick="resete()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

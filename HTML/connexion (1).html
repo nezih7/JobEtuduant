@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Connexion</title>
+  <link rel="icon" type="image/x-icon" href="../res/22 (1).png">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../CSS/connexion.css">
+  <script src="../JS/connexion.js"></script>
+</head>
+<body onload="capt()">
+  <div class="conteneur">
+  <div class="login-form" id="login-form">
+    <h1>Connexion</h1>
+    <form action="../PHP/connexion.php" method="post" name="f">
+      <label for="username">Nº Carte d'identité nationale:</label><br>
+      <input type="text" id="cin" name="cin"><br>
+      <label for="password">Mot de passe:</label><br>
+      <input type="password" id="password" name="pass"><br><br>
+      <label>Captcha:</label><input type="text" name="cap" disabled><br>
+			<label>Combien de caractere majuscule dans le captcha ?:</label><input type="text" name="ccap" size="2">
+<div class="button-container">
+      <input type="button" value="Login" onclick="verif()">
+			<input type="button" value="Clear" onclick="resete()" >
+      
+    </div>
+    <a href="../HTML/oblier.html"><label id="a">Mot de passe oublié ?</label></a>
+    </form>
+  </div>
+</div>
+
+  
+</body>
+</html>

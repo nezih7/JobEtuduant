@@ -1,0 +1,105 @@
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+#form2, #form1 {
+    display: inline-block; /* Make them appear side-by-side */
+     /* Adjust width as needed */
+    margin: 5px;  /* Adds some space between blocks (optional) */
+     /* Example color */
+    padding: 5px; /* Adds padding inside blocks */
+    justify-content: flex-end;
+  }
+ 
+  
+#form1 {
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    flex-direction: row; /* Aligner le contenu à droite */
+    width: 30%;/* Utilisation d'un pourcentage pour la hauteur */
+
+  }
+#form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FF792C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Pour que le bloc se comporte comme un élément en ligne tout en ayant une largeur et une hauteur définies */
+  position: absolute; /* Position absolue pour permettre un positionnement précis */
+  top: 50%; /* Déplace le haut du bloc à 50% de la hauteur du conteneur parent */
+  right: 5%; /* Aligner le bloc à droite */
+  transform: translateY(-50%);
+  overflow-x: auto; /* Translate le bloc de moitié de sa hauteur vers le haut pour le centrer verticalement */
+  }
+ #form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+  
+  }
+  li{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+  }
+#form2{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width:60%;
+    height: 100%;
+    background-color: #FF792C;
+    overflow-x: auto;
+
+}
+#form2 h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+  
+  }
+#form0{
+    margin: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.ul li{
+    color: black;
+    
+}
+.button-container input[type="submit"]
+{
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.button-container input[type="submit"]:hover{
+  background-color : #0056b3;
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../CSS/incent1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="../JS/confen.js"></script>
+	<link rel="icon" type="image/x-icon" href="../res/22 (1).png">
+	<title>INSCRIPTION</title>
+</head>
+<body onchange="enab()" onload="capt()">
+<div class="login-form" id="login-form">
+
+	<h1>INSCRIPTION ETREPRENEUR</h1>
+		<form name="f" method="post" action="../PHP/entrepreneur.php">
+			<label>Nom:</label><input type="text" autofocus name="nm"><br><br>
+			<label>Prenom:</label><input type="text" name="pr"><br><br>
+			<label>Date de naissance:</label><input type="date" name="dn"><br><br>
+			<label>Region:</label>
+			<select name="rg">
+		
+					<option value="">-- Sélectionnez une région --</option>
+					<option value="Ariana">Ariana</option>
+					<option value="Beja">Beja</option>
+					<option value="Bizerte">Bizerte</option>
+					<option value="Ben Arous">Ben Arous</option>
+					<option value="Tataouine">Tataouine</option>
+					<option value="Touzeur">Touzeur</option>
+					<option value="Tunis">Tunis</option>
+					<option value="Jendouba">Jendouba</option>
+					<option value="Zaghouan">Zaghouan</option>
+					<option value="Siliana">Siliana</option>
+					<option value="Sousse">Sousse</option>
+					<option value="Sidi Bouzid">Sidi Bouzid</option>
+					<option value="Sfax">Sfax</option>
+					<option value="Gabès">Gabès</option>
+					<option value="Kebili">Kebili</option>
+					<option value="Gafsa">Gafsa</option>
+					<option value="Kairouan">Kairouan</option>
+					<option value="Le Kef">Le Kef</option>
+					<option value="Médenine">Médenine</option>
+					<option value="Monastir">Monastir</option>
+					<option value="Manouba">Manouba</option>
+					<option value="Mahdia">Mahdia</option>
+					<option value="Nabeul">Nabeul</option>
+				  </select>
+			<label>Ville:</label><input type="text" disabled name="vl"><br><br>
+			<label>Email:</label><input type="Email" name="em"><br><br>
+			<label>Mot de passe:</label><input type="password" name="ps"><br><br>
+			<label>Confirmer votre mot de passe:</label><input type="password" name="cps"><br><br>
+			<label>Cin:</label><input type="text" name="cin"><br><br>
+			<label>Téléphone:</label><input type="text" name="tel"><img src="../res/ooredoo.png" width="50px">&nbsp;&nbsp;&nbsp;<img src="../res/telecom.jpg" width="50px">&nbsp;&nbsp;&nbsp;<img src="../res/orange.png" width="50px"><br><br>
+			<label>description:</label><textarea cols="50" rows="5" placeholder="n'est pas obligatoire" name="des"></textarea><br><br>
+			<label>Captcha:</label><input type="text" name="cap" disabled><br><br>
+			<label>Combient de caractere majuscule dans le captcha ?:</label><input type="email" name="ccap" size="2"><br><br>
+			<div class="button-container">
+			<input type="button" value="Submit"  onclick="verif()" name="sb">
+			<input type="button" value="Clear" onclick="resete()">
+		</div>
+		</form>
+		
+
+</div>
+</body>
+</html>
